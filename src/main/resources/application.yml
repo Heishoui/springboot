@@ -1,0 +1,20 @@
+server:
+  port: 88
+spring:
+  mvc:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 0
+      location:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ricedb?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password:
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
